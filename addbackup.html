@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+  
+  var f=0;
+  g=0
+   var array1=[];
+  var array=[];
+  document.getElementById('one');
+  document.addEventListener('keypress',e=>{
+var bp=e.keyCode;
+
+switch(bp){
+  case 49: array[0]=0;
+           array1[0]=0;
+           f=f+1;
+           array[f]=1;
+
+          document.getElementById('a-'+array[f]).innerHTML=array[f];
+       
+           g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+           
+            break;
+
+    case 50:array[0]=0;  array1[0]=0;
+             f=f+1;
+             array[f]=2
+
+          document.getElementById('a-'+array[f]).innerHTML=array[f];
+           document.getElementById('2').value=array[f];
+             g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+            break;
+
+    case 51:array[0]=0;  array1[0]=0;
+            f=f+1
+            array[f]=3;
+            document.getElementById('a-'+array[f]).innerHTML=array[f]
+             document.getElementById('2').value=array[f];
+               g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+            break;
+
+        case 52: array[0]=0;  array1[0]=0;
+           f=f+1;
+           array[f]=4;
+
+          document.getElementById('a-'+array[f]).innerHTML=array[f];
+           document.getElementById('2').value=array[f];
+             g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+            break;
+
+
+    case 53:array[0]=0;  array1[0]=0;
+             f=f+1;
+             array[f]=5
+
+             document.getElementById('a-'+array[f]).innerHTML=array[f];
+             document.getElementById('2').value=array[f];
+              g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+            break;
+
+    case 54:array[0]=0;  array1[0]=0;
+            f=f+1
+            array[f]=6;
+            document.getElementById('a-'+array[f]).innerHTML=array[f]
+             document.getElementById('2').value=array[f];
+               g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+            break;
+
+    case 55: array[0]=0;  array1[0]=0;
+           f=f+1;
+           array[f]=7;
+
+          document.getElementById('a-'+array[f]).innerHTML=array[f];
+           document.getElementById('2').value=array[f];
+             g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+            break;
+
+    case 56:array[0]=0;  array1[0]=0;
+             f=f+1;
+             array[f]=8
+
+          document.getElementById('a-'+array[f]).innerHTML=array[f];
+           document.getElementById('2').value=array[f];
+             g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+            break;
+
+    case 57:array[0]=0;  array1[0]=0;
+            f=f+1
+            array[f]=9;
+            document.getElementById('a-'+array[f]).innerHTML=array[f]
+             document.getElementById('2').value=array[f];
+               g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+            break;
+
+
+    case 43:array[0]=0;  array1[0]=0;
+            f=f+1
+            array[f]='+';
+            document.getElementById('a-'+array[f]).innerHTML=array[f]
+             document.getElementById('2').value=array[f];
+               g=g+1;
+           var t= document.getElementById('2').value=array[f];
+           array1[g]=t;
+            break;
+
+ 
+}
+  })
+  function add(){
+   /* document.getElementById('enter')
+    document.addEventListener('keypress',e=>{
+      
+      if (e.keyCode===43 ){
+        var d='+';
+         document.getElementById('plus').click();
+        document.getElementById('plus').innerHTML='+';
+        
+        
+         }})
+ 
+*/
+ 
+
+
+
+
+var w=Number(0);
+
+
+
+var x='';
+for(var j=1;j<array.length;j++){
+  
+    x+=array[j];
+   
+}
+   document.getElementById('3').innerHTML=x;
+   document.getElementById('33').value=x
+
+for(var i=1;i<array.length;++i){
+  
+    w+=array[i];
+    i=i+1
+   
+}
+   document.getElementById('disp').innerHTML=w;
+   document.getElementById('input').value=w;
+}
+
+
+
+
+</script>
+</head>
+<body onload="ADD()" >
+
+
+  <h1  id=plus>
+<div id=one></div>
+ <h1 id=a-1></h1> <h1 id=a-2></h1> <h1 id=a-3></h1> <h1 id=a-4></h1> <h1 id=a-5></h1> <h1 id=a-6></h1> <h1 id=a-7></h1> <h1 id=a-8></h1> <h1 id=a-+></h1>
+elements that r entering : <input type="" id=2 name=""><br><br>
+all the elements that r entered : <h1  id=3></h1>
+<input type="" id=33 name=""><br><br>
+
+
+
+<button id=enter onclick="add()">+</button><br><br>
+
+<h1 id=disp></h1><br><br>
+Total : <input type="" id=input name="">
+</body>
+</html>
+
+
+
+
+
